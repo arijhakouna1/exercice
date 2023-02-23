@@ -3,13 +3,13 @@ pipeline{
   stages{
     
     stage("build"){
-      step{
+      steps{
           echo "hello , I'm building" 
           }
       }
       
     stage("test"){
-      step{
+      steps{
           echo "hello , I'm testing" 
       }
   
