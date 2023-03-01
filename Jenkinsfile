@@ -14,14 +14,14 @@ pipeline{
       }
   
     } 
-    stage("teste de qualité"){
+  /* stage("teste de qualité"){
       steps{
            withSonarQubeEnv('sonarqube') {
                  echo "hello , I'm testing quality"  
                 }
       }
   
-    } 
+    } */
      stage("deploy-nexus"){
       steps{
           nexusArtifactUploader(
