@@ -17,7 +17,7 @@ pipeline{
     stage("teste de qualité"){
       steps{
            withSonarQubeEnv('sonarqube') {
-                 echo "hello , I'm testing"  
+                 echo "hello , I'm testing quality"  
                 }
       }
   
@@ -37,7 +37,7 @@ pipeline{
                                      classifier: '',
                                      file: "http://10.50.250.70:8081/repository/raoua/yubikey%20coordonn%C3%A9e",
                                      type: "yubikey coordonnée.txt"]]);
-          echo "hello , I'm testing" 
+          echo "hello , I'm deploying on nexus" 
       }
   
     } 
