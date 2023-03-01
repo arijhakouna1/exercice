@@ -35,7 +35,7 @@ pipeline{
                                 artifacts: [
                                     [artifactId: "yubikey coordonnée", 
                                      classifier: '',
-                                     file: "http://10.50.250.70:8081/repository/raoua/yubikey%20coordonn%C3%A9e",
+                                     file: "/yubikey%20coordonn%C3%A9e",
                                      type: "yubikey coordonnée.txt"]]);
           echo "hello , I'm deploying on nexus" 
       }
