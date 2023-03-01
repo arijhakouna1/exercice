@@ -17,6 +17,7 @@ pipeline{
   stage("teste de qualité"){
       steps{
            withSonarQubeEnv('sonarqube') {
+               sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
                  echo "hello , I'm testing quality"  
                 }
       }
