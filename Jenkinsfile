@@ -35,7 +35,7 @@ pipeline{
                                 artifacts: [
                                     [artifactId: "yubikey coordonnée", 
                                      classifier: '',
-                                     file: "/yubikey%20coordonn%C3%A9e",
+                                     file: "/yubikey coordonnée",
                                      type: "yubikey coordonnée.txt"]]);
           echo "hello , I'm deploying on nexus" 
       }
