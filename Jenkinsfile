@@ -31,14 +31,15 @@ pipeline{
                                 protocol: "http" ,
                                 nexusUrl: "10.50.250.70:8081" ,
                                 groupId: "my",
-                                version: "1.0-version",
+                                version: "1",
                                 repository: "raoua",
                                 credentialsId: "nexus-connection", 
                                 artifacts: [
                                     [artifactId: "fonction", 
                                      classifier: '',
-                                     file: "fonction",
-                                     type: ".c"]]);
+                                     type: "c"
+                                     file: "fonction-1.c",
+                                     ]]);
           echo "hello , I'm deploying on nexus" 
       }
   
