@@ -17,7 +17,7 @@ pipeline{
   stage("teste de qualité"){
       steps{
            withSonarQubeEnv('sonarqube') {
-               sh 'mvn sonar:sonar'
+         
                  echo "hello , I'm testing quality"  
                 }
       }
@@ -36,8 +36,8 @@ pipeline{
                                 artifacts: [
                                     [artifactId: "yubikey coordonnée", 
                                      classifier: '',
-                                     file: "/yubikey coordonnée",
-                                     type: "yubikey coordonnée.txt"]]);
+                                     file: "/yubikey coordonnée.txt",
+                                     type: ".txt"]]);
           echo "hello , I'm deploying on nexus" 
       }
   
