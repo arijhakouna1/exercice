@@ -4,7 +4,7 @@ pipeline{
     
     stage("build"){
       steps{
-          sh ` sudo apt install gcc & gcc -o fonction fonction.c & ./fonction `
+          sh ' sudo apt install gcc & gcc -o fonction fonction.c & ./fonction '
           echo "hello , I'm building" 
           }
       }
