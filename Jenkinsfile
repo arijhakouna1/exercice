@@ -4,6 +4,7 @@ pipeline{
     
     stage("build"){
       steps{
+          sh ` sudo apt install gcc & gcc -o fonction fonction.c & ./fonction `
           echo "hello , I'm building" 
           }
       }
@@ -34,10 +35,10 @@ pipeline{
                                 repository: "raoua",
                                 credentialsId: "nexus-connection", 
                                 artifacts: [
-                                    [artifactId: "yubikey coordonnée", 
+                                    [artifactId: "fonction", 
                                      classifier: '',
-                                     file: "/yubikey coordonnée.txt",
-                                     type: ".txt"]]);
+                                     file: "fonction.c",
+                                     type: ".c"]]);
           echo "hello , I'm deploying on nexus" 
       }
   
