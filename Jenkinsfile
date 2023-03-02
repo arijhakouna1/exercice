@@ -37,7 +37,7 @@ pipeline{
                                 artifacts: [
                                     [artifactId: "fonction", 
                                      classifier: '',
-                                     type: "c"
+                                     type: "c",
                                      file: "fonction-1.c"]]);
           echo "hello , I'm deploying on nexus" 
       }
